@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="ShowBox — Your Premium OTT Streaming Platform. Watch unlimited movies, web series, live TV and exclusive originals. Subscribe now!">
+    <title>ShowBox — Stream Unlimited | OTT Platform</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+
+    <a href="javascript:void(0);" onclick="btnLng();" class="language">
+        <span class="lng_en">English</span><span class="lng_ar">العربية</span>
+    </a>
+
+    <!-- ===== HEADER (Logo + Tagline) — shown on all flow pages ===== -->
+    <div class="main-img" id="siteHeader">
+        <img src="images/logo.png" alt="ShowBox Logo" />
+        <h1>
+            <span class="lng_en"><p>Your World of Entertainment,<br>Unlimited &amp; On Demand!</p></span>
+            <span class="lng_ar">شاهد آخر الأعمال الدرامية والعروض الترفيهية العربية والآسيوية.</span>
+        </h1>
+    </div>
+
+    <!-- ===== WAP / HE FLOW (Page 1) ===== -->
+    <div id="block1_He" style="display:block">
+        <div class="banner-area">
+
+            <!-- OTT DESCRIPTION — shown on first page only, inside block1_He -->
+            <div class="ott-description">
+                <div class="ott-badge">OTT Platform</div>
+                <p>
+                    <strong>ShowBox</strong> is a premium Over-The-Top (OTT) streaming platform that brings you the best in entertainment — anytime, anywhere. Enjoy a vast library of <strong>movies, web series, TV shows, live sports</strong> and <strong>exclusive originals</strong> in stunning HD quality. Stream on your mobile, tablet, or smart TV with zero interruptions.
+                </p>
+                <div class="ott-features">
+                    <span>🎬 Movies &amp; Series</span>
+                    <span>📺 Live TV</span>
+                    <span>🏆 Originals</span>
+                    <span>🌍 Multi-Language</span>
+                    <span>📱 All Devices</span>
+                </div>
+            </div>
+            <!-- END OTT DESCRIPTION -->
+
+            <p>
+                <span class="lng_en">Subscribe now to unlock unlimited streaming</span>
+                <span class="lng_ar">الرجاء إدخال رقم هاتفك النقال للتسجيل.</span>
+            </p>
+
+            <div class="form">
+                <form id="formHESubscription" method="post" novalidate="">
+                    <div class="operadores">
+                        <input class="inputer" id="msisdnHe" name="msisdnHe" type="text" placeholder="Introduce tu celular" value="#{msisdn}" maxlength="12" style="display: none" />
+                    </div>
+                    <div class="btn animated pulse infinite" id="popuphe">
+                        <span class="lng_en">▶ Subscribe Now</span>
+                        <span class="lng_ar">اشترك</span>
+                    </div>
+                    <div class="price-bottom">
+                        <span class="lng_en">SR 0.66 / Day &bull; Auto-renewal &bull; Cancel anytime</span>
+                        <span class="lng_ar">أنت تستخدم رقم 96800000000 للاشتراك<br>تجربة مجانية مدة يومين، عند الانتهاء من التجربة المجانية سوف يتم احتساب 200 بيسة يوميا.</span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="popupHe message-area" style="display: none">
+                <div class="btn-close-he">✕</div>
+                <div class="line">
+                    <div>
+                        <span class="lng_en">Almost there!<br>Please confirm<br>to get access</span>
+                        <span class="lng_ar">اوشكت على الوصول! يرجى التأكيد للمشاهدة</span>
+                        <div class="serviceName">
+                            <!-- ?php echo $serviceName; ?-->
+                        </div>
+                    </div>
+                </div>
+                <div class="line line-btnPopup">
+                    <input class="btnSubmit" id="formHESubscriptionSubmit" type="submit" name="btnSubmit" value="Confirm &amp; Subscribe" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ===== END WAP / HE FLOW ===== -->
+
+    <!-- ===== MSISDN FLOW (Page 2) ===== -->
+    <div id="block1" style="display:none">
+        <div class="banner-area">
+            <p class="descrOptin" style="display:block">
+                <span class="lng_en">Enter your mobile number below to get your access PIN</span>
+                <span class="lng_ar">أدخل رقم جوالك للبدء بالمشاهدة</span>
+            </p>
+            <div class="form">
+                <form id="formSubscription" name="contacto">
+                    <p>
+                        <img width="40" src="images/icon1.jpg" alt="phone" />
+                        <input class="prefix" disabled="disabled" value="974" />
+                        <input class="inputer" id="msisdn" name="msisdn" type="text" placeholder="Mobile number" maxlength="12" />
+                    </p>
+                    <p class="operadores">
+                        <img width="40" src="images/icon3.png" alt="carrier" />
+                        <select class="inputer">
+                            <option value="Mobily" selected>Mobily</option>
+                        </select>
+                    </p>
+                    <div class="btn" id="formSubscriptionSubmit">
+                        <span class="lng_en">▶ Subscribe Now</span>
+                        <span class="lng_ar">اشترك</span>
+                    </div>
+                    <div class="price-bottom">
+                        <span class="lng_en">Only For Ooredoo clients &bull; 10 QAR/Week</span>
+                        <span class="lng_ar">تجربة مجانية مدة يومين، عند الانتهاء من التجربة المجانية سوف يتم احتساب 200 بيسة يوميا.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ===== END MSISDN ===== -->
+
+    <!-- ===== PIN FLOW (Page 3) ===== -->
+    <div id="block2" style="display:none">
+        <div class="banner-area">
+            <p class="descrOptin">
+                <span class="lng_en">Enter the PIN sent to your mobile to confirm</span>
+                <span class="lng_ar">ادخل الرقم الذي تلقيته للتأكيد</span>
+            </p>
+            <div class="form">
+                <form id="formValidation" name="contacto">
+                    <p>
+                        <img width="40" src="images/icon2.jpg" alt="pin" />
+                        <input class="inputer" id="password" name="password" type="text" placeholder="Enter PIN" maxlength="4" />
+                    </p>
+                    <div class="btn fade grow" id="formValidationSubmit">
+                        <span class="lng_en">✔ Confirm</span>
+                        <span class="lng_ar">للتأكيد</span>
+                    </div>
+                    <div class="price-bottom">
+                        <span class="lng_en">Only For Ooredoo clients &bull; 10 QAR/Week</span>
+                        <span class="lng_ar">تجربة مجانية مدة يومين، عند الانتهاء من التجربة المجانية سوف يتم احتساب 200 بيسة يوميا.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ===== END PIN ===== -->
+
+    <!-- ===== CONGRATS (Page 4) — NO second logo, header logo stays visible ===== -->
+    <div id="block3" style="display:none">
+        <div id="main-body">
+            <div class="congrats-card">
+                <p>
+                    <span class="lng_en">🎉 Congratulations!<br>You now have full access to ShowBox.<br>A confirmation SMS has been sent to your number.</span>
+                    <span class="lng_ar">تهانينا! سوف تستلم رسالة نصية لمعرفة أفضل الوصفات</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ===== END CONGRATS ===== -->
+
+    <div style="clear: both"></div>
+
+    <!-- LEGAL FOOTER -->
+    <div class="footer">
+        <div class="legal-footer">
+            <span class="lng_en">Welcome to ShowBox — Your Premium OTT Streaming Platform! Subscribers enjoy unlimited access to movies, web series, live TV &amp; exclusive originals. The subscription rate for ShowBox for Mobily users is SR 0.66/Day. Your subscription renews automatically until cancelled. To cancel, send 1 to 601061. You must be 18+ years old or have permission from a billing-authorized person to use this service.</span>
+            <span class="lng_ar">سوف تشترك في خدمة ShowBox Premium. استمتع بمجموعة كبيرة من مقاطع الفيديو والأفلام والمسلسلات الرائعه. إذا كنت مستخدم جديد فسوف تحصل على يومين مجانيين. سيتم تجديد الاشتراك تلقائيًا بعد انتهاء التجريبية المجانية، لإلغاء الاشتراك في أي وقت أرسل UNSUB إلى 90089. يجب ان يكون عمرك اكثر من 18 سنة لاستخدام هذه الخدمة.</span>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+</body>
+
+</html>
